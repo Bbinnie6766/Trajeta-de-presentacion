@@ -1,11 +1,15 @@
-:root{
-    --bg-blue:#24a52a;
+:root {
+    --bg-blue: #24a52a;
 }
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.container{
+body{
+    font-family: Arial, sans-serif;
+}
+.container {
     width: 100%;
     height: 90vh;
     background-color: rgb(62, 206, 69);
@@ -13,27 +17,50 @@
     justify-content: center;
     align-items: center;
 }
-.tarjeta{
+.tarjeta {
     width: 30%;
-    height: 70vh;
-    background-color: white;
+    height: 75vh;
     background-color: #2ce780;
     border: 10px solid var(--bg-blue);
     border-radius: 4rem;
     box-shadow: 0 0 20px #19771e;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.foot{
-    width: 100%;
+.imagenshadowsito {
+    width: 65%;
+    height: 45%;
+    box-shadow: 1px 1px 30px 10px rgba(245, 159, 47, 0.747);
+    border-radius: 2rem 2rem 2rem 2rem;
+    object-fit: cover;
+}
+.titulos{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    color: rgb(129, 124, 117);
+    gap: 5px;
     height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.foot {
+    width: 100%;
+    height: 10vh;
     background-color: var(--bg-blue);
     border-radius: 0 0 3rem 3rem;
     position: absolute;
     bottom: 0;
-}
-.imagenshadowsito{
-    width: 50%;
-    height: 50%;
-    box-shadow: #0f5312;
-    border-radius: 2rem 2rem 2rem 2rem;
+    display: flex;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: rgb(71, 69, 65);
+    align-items: center;
+    justify-content: center;
 }
